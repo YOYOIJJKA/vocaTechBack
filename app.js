@@ -1,7 +1,6 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
-const MongoClient = require('mongodb').MongoClient;
 const bodyParser = require('body-parser');
 
 const PORT = 3000;
@@ -17,6 +16,9 @@ const transporter = nodemailer.createTransport({
         user: 'nvoca@list.ru',
         pass: 'BvReiTSzTr3duXdPXtfn',
     },
+});
+app.get('', (req, res) => {
+    res.send("GeeksforGeeks");  
 });
 
 app.post('/sendmail', (req, res) => {
