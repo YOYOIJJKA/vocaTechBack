@@ -7,9 +7,8 @@ meta:
 build:
   artifacts:
     '*': /
-  skip: true
 run:
-  scriptName: app.js
+  scriptName: src/app.js
   command: npm run start
   persistenceMount: /data
   containerPort: 80
