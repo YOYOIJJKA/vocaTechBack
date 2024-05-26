@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
     },
 });
 app.get('', (req, res) => {
-    res.send("GeeksforGeeks");  
+    res.send("vocaTechContentTeplate");  
 });
 
 app.post('/sendmail', (req, res) => {
@@ -30,13 +30,13 @@ app.post('/sendmail', (req, res) => {
 
     let mailOptions = {
         from: 'noreply <nvoca@list.ru>',
-        to: 'y7zdoh@list.ru',
+        to: 'sell@voca.tech',
         subject: 'Request',
         html: `<div>
-        <p>Name: ${name}</p>
+        <p>Имя: ${name}</p>
         <p>Email: ${email}</p>
-        <p>TIN: ${TIN}</p>
-        <p>Phone: +7${phone}</p>
+        <p>ИНН: ${TIN}</p>
+        <p>Телефон: +7${phone}</p>
         <p>количество устройств: ${devices}</p>
     </div>`,
     };
