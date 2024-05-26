@@ -8,6 +8,10 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+    res.send('Hello from Netlify Functions!');
+  });
+
 const transporter = nodemailer.createTransport({
     host: 'smtp.mail.ru',
     port: 587,
