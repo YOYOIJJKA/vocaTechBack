@@ -30,7 +30,7 @@ app.post('/sendmail', (req, res) => {
 
     let mailOptions = {
         from: 'noreply <nvoca@list.ru>',
-        to: 'sell@voca.tech',
+        to: 'ceo@voca.tech',
         subject: 'Заявка с vocaTech',
         html: `<div>
         <p>Имя: ${name}</p>
